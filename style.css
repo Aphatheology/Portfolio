@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+}
+
+.profile-img {
+    background-color: #05b993;
+    background-image: url('https://devcareer.io/images/bg.svg');
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.profile-img img {
+    width: 100%;
+    height: auto;
+    border: 5px solid white;
+}
+
+h1 {
+    text-align: center;
+    margin: 25px auto 15px;
+    letter-spacing: 1.25px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.profile-img .send-mail {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    width: 50%;
+    padding: 20px;
+    border-radius: 2.5px;
+    outline: none;
+    margin: 25px auto 50px;
+    
+}
+
+.profile-img .send-mail:hover {
+    background-color: black;
+color: white;
+}
+
+p.dev {
+    text-align: center;
+    display: block;
+    color: gray;
+    padding: 20px;
+    margin-bottom: 75px;
+    border-bottom: 1px solid gray;
+}
+
+.details {
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+p.dev a {
+    text-decoration: none;
+    color: rgb(209, 173, 14);
+}
+
+.others {
+    width: 100vw;
+    padding: 0px 15px;
+    margin: 0px auto 25px;
+}
+
+.others1 {
+    width: 100vw;
+    padding: 15px;
+}
+
+span {
+    display: inline-block;
+    margin: 5px 5px 0px 5px;
+    padding: 10px 30px 10px 10px;
+    background-color: rgb(37, 35, 35);
+    color: white;
+}
+
+hr {
+    height: 10px;
+    background-color: #05b993;
+    margin: auto;
+    width: 100%;
+}
+
+p , p.bio {
+    text-align: left;
+    line-height: 150%;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+.social-link {
+    width: 100vw;
+    padding: 15px;
+}
+
+/* h3 {
+    margin-bottom: 10px;
+} */
+
+.social-link a {
+    
+    display: inline-flex;
+    
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    /* padding: 5px; */
+    border-radius: 50%;
+    color: normal;
+}
+
+.fb {
+    color: #3b5998;
+    border: 1px solid #3b5998;
+}
+
+.gh {
+    color: black;
+    border: 1px solid black;
+}
+
+.ig {
+    color: #8134AF;
+    border: 1px solid #8134AF;
+}
+
+.lk {
+    color: #0e76a8;
+    border: 1px solid #0e76a8;
+}
+
+.md {
+    color: #3cb371;
+    border: 1px solid #3cb371;
+}
+
+.tw {
+    color: #00ACEE;
+    border: 1px solid #00ACEE;
+}
+
+.desktop-name {
+    display: none;
+}
+
+.works {
+    padding: 0px 15px;
+}
+
+.myworks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.myworks div {
+    border: 5px solid #3cb371;
+    /* background-color: #3cb371;
+    color: white; */
+    font-weight: 900;
+    font-size: larger;
+    padding: 15px 10px;
+    width: 100%;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.myworks div img {
+    width: 80%;
+}
+
+.myworks a {
+    text-decoration: none;
+    color: #3cb371;
+    font-weight: 900;
+}
+
+.myworks a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 450px) {
+    .profile-img img {
+        width: 100%;
+        height: auto;
+        border: 5px solid white;
+    }
+}
+
+@media screen and (min-width: 451px) {
+    body {
+        width: 100vw;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        min-height: 100vh;
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .desktop-name {
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-name {
+        display: none;
+    }
+
+    .profile-img img {
+        width: 50%;
+        height: auto;
+        margin: auto;
+        display: block;
+        border: 5px solid white;
+    }
+
+    .details {
+        
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .details div {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        width: 100vw;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        min-height: 100vh;
+        height: 100%;
+        overflow-y: hidden;
+        position: relative;
+    }
+
+    .desktop-name {
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-name {
+        display: none;
+    }
+
+    .profile-img {
+        height: 100vh;
+        width: 35vw;
+        padding: 25px ;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        position: fixed;
+        overflow: hidden;
+        margin-right: 350px;
+    }
+
+    .profile-img img {
+        width: 80%;
+        border-radius: 5px;
+        margin: 0 auto;
+        /* position: absolute; */
+    }
+
+    .profile-img .send-mail {
+        margin: 25px auto;
+        width: 80%;
+        /* position: absolute; */
+    }
+
+    .details {
+        width: 65vw;
+        padding-left: 50px;
+        padding-right: 25px;
+        overflow: scroll;
+        margin-left: 35vw;
+    }
+
+    p.dev {
+        text-align: right;
+    }
+
+    .details div {
+        width: 100%;
+    }
+}
