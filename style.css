@@ -195,6 +195,10 @@ p , p.bio {
     width: 80%;
 }
 
+.myworks p {
+    text-align: center;
+}
+
 .myworks a {
     text-decoration: none;
     color: #3cb371;
